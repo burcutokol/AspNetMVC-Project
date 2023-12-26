@@ -571,9 +571,14 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\DataContext\DbContextClass.cs" />
     <Compile Include="Models\Model\About.cs" />
     <Compile Include="Models\Model\Admin.cs" />
+    <Compile Include="Models\Model\Blog.cs" />
+    <Compile Include="Models\Model\Category.cs" />
     <Compile Include="Models\Model\Contact.cs" />
+    <Compile Include="Models\Model\Service.cs" />
     <Compile Include="Models\Model\SiteIdentity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -594,7 +599,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\DataContext\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Content\AdminLayout\assets\vendor\chart.js\controllers\controller.bar.d.ts" />

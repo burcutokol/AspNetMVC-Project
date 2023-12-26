@@ -1,4 +1,5 @@
-﻿@model IEnumerable<AspNetMVC.Models.Category>
+﻿@model IEnumerable<AspNetMVC.Models.Model.Category>
+
 @{
     ViewBag.Title = "Admin";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
@@ -8,10 +9,10 @@
 
     <div class="pagetitle">
         <h1>Dashboard</h1>
-        @foreach (var item in Model)
-        {
-            <li>@item.CategoryName</li>
-        }
+        @foreach(var item in Model)
+            {
+                <li>@item.CategoryName</li>
+            }
         <nav>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>

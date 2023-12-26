@@ -1,4 +1,5 @@
 ﻿using AspNetMVC.Models;
+using AspNetMVC.Models.DataContext;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,11 +10,10 @@ namespace AspNetMVC.Controllers
 {
     public class AdminController : Controller
     {
-        KurumsalDb kurumsalDb = new KurumsalDb();
-        // GET: Admin
+        DbContextClass db = new DbContextClass();
         public ActionResult Index()
         {
-            var sql = kurumsalDb.Categories.ToList();
+           var sql = db.Category.ToList();
             return View(sql);
         }
     }
